@@ -10,38 +10,61 @@
 </head>
 <body>
     <div class = "left-img">
-        <!-- <img src = "/home/philedo/repos/SignUpForm/images/halie-west-25xggax4bSA-unsplash.jpg" class = "background-image" alt="background-image "> -->
-        <img src = "/home/philedo/repos/SignUpForm/images/odin-lined.png" class = "odin-logo" alt = "odin-logo">
+        <img src = "/home/philedo/repos/SignUpForm/images/halie-west-25xggax4bSA-unsplash.jpg" class = "background-image" alt="background-image ">
+        <div class = overlay-img>
+            <img src = "/home/philedo/repos/SignUpForm/images/odin-lined.png" class = "odin-logo" alt = "odin-logo">
+            <p>ODIN</p>
+        </div>
+        
     </div>
     
     
     <div class = "right-content">
         <div class = "right-top">This is not a real online service!<br>You Know you need something like this in your life to help you realize your deepest dreams.<br>Sign up now to get Started.<br><br>You know you want to.</div>
         <div class = "right-middle">
-            <form action ="" method = "post">
-                <p>Let's do this!</p>
-                <label for ="firstName">First Name</label>
-                <input type = "text" id = "firstName" name="firstName">
+            <p>Let's do this!</p>
+            <form action ="" method = "post" class = "form">
+                <div class = "firstName">
+                    <label for ="firstName">FIRST NAME</label>
+                    <input type = "text" id = "firstName" name="firstName">
+                </div>
+               
+                <div class = "lastName">
+                    <label for ="lastName">LAST NAME</label>
+                    <input type = "text" id = "lastName" name="lastName">
+                </div>
 
-                <label for ="lastName">Last Name</label>
-                <input type = "text" id = "lastName" name="lastName">
+                <div class = "email">
+                    <label for ="email">EMAIL</label>
+                    <input type = "email" id = "email" name="email">
+                </div>
 
-                <label for ="email">Email</label>
-                <input type = "email" id = "email" name="email">
+                <div class = "phoneNumber">
+                    <label for ="phoneNumber">PHONE NUMBER</label>
+                    <input type = "number" id = "phoneNumber" name="phoneNumber">
+                </div>
 
-                <label for ="phoneNumber">Phone Number</label>
-                <input type = "number" id = "phoneNumber" name="phoneNumber">
+                <div class = "password">
+                    <label for ="password">PASSWORD</label>
+                    <input type = "password" id = "password" name="password" class ="error">
+                </div>  
 
-                <label for ="password">Password</label>
-                <input type = "password" id = "password" name="password">
+                <div class = "confirmedPassword">
+                    <label for ="confirmedPassword">CONFIRM PASSWORD</label>
+                    <input type = "password" id = "confirmedPassword" name="confirmedPassword" class ="error">
+                </div>
 
-                <label for ="confirmedPassword">Password</label>
-                <input type = "password" id = "confirmedPassword" name="confirmedPassword">
             </form>
-        </div>
+
+    </div>
+
         <div class = "right-bottom">
             <button>Create Account</button>
-            <p1>Already have an account? Log in</p1>
+            <div>
+                <p>Already have an account? </p>
+                <a href = "" alt="login">Log in</a>
+            </div>
+            
         </div>
     </div>
 </body>
